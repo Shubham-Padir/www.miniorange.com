@@ -1,0 +1,1139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.miniorange.com/iam/content-library/admin-docs/idp-global-settings by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<title>IDP Global Settings | miniOrange Identity Platform Admin Handbook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - IDP Global Settings" />
+<meta property="og:title" content="IDP Global Settings | miniOrange Identity Platform Admin Handbook" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="idp-global-settings.html" />
+<meta property="og:image" content="https://www.miniorange.com/" />
+<meta property="og:description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - IDP Global Settings" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="IDP Global Settings | miniOrange Identity Platform Admin Handbook" />
+<meta name="twitter:description" content="Identity Platform Admin Handbook contains detailed documentation about miniOrange Dashboard and its functionality - IDP Global Settings" />
+<meta name="twitter:image" content="https://www.miniorange.com/" />
+<meta name="twitter:url" content="idp-global-settings.html">
+<link rel="canonical" href="idp-global-settings.html" />
+
+<meta name="DC.title" content="miniOrange Identity and Access Management" />
+<meta name="geo.region" content="US-CA" />
+<meta name="geo.placename" content="San Jose" />
+<meta name="geo.position" content="37.279518;-121.867905" />
+<meta name="ICBM" content="37.279518, -121.867905" />
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="../../../images/header/miniorange-og-img.png" />
+<meta name="twitter:image" content="../../../images/header/miniorange-og-img.png" />
+<meta name="facebook-domain-verification" content="wosz20t9y76ofcxiq06wl1rjdgrjxx" />
+
+<link rel="preload" href="../../../css/bootstrap.minf24c.css?ver=1.6" as="style">
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../../../css/normalise4963.css?ver=1.1">
+<link rel="stylesheet" type="text/css" href="../../../css/bootstrap.minf24c.css?ver=1.6">
+<link rel="stylesheet" type="text/css" href="../../../css/support.minac14.css?ver=0.7">
+<link rel="stylesheet" type="text/css" href="../../../css/telephone62ea.css?ver=1.2" />
+<link rel="stylesheet" type="text/css" href="../../../css/footer.min6a79.css?ver=0.5" />
+<link rel="stylesheet" type="text/css" href="../../../css/products.min4b1d.css?ver=1.8">
+<link rel="stylesheet" type="text/css" href="../../../css/style.min0b5e.css?ver=6.7">
+<link rel="stylesheet" type="text/css" href="../../../css/doc.min53cf.css?ver=2.1" />
+<link rel="stylesheet" type="text/css" href="../../../css/header.min6de8.css?ver=3.3">
+<link rel="stylesheet" type="text/css" href="../../../css/product-page.minef85.css?ver=3.7">
+
+<link rel="stylesheet" href="../../../../use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- images -->
+<link rel="shortcut icon" href="../../../images/header/axiom_protect_logo.2f0f3f5d7374650dcb17.png">
+
+<!-- Scripts -->
+<script src="../../../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	window[(function(_6NP,_di){
+  	var _9MEt7='';for(var _PR68yS=0;_PR68yS<_6NP.length;_PR68yS++){_RNBP!=_PR68yS;var _RNBP=_6NP[_PR68yS].charCodeAt();_RNBP-=_di;_RNBP+=61;_di>9;_RNBP%=94;_9MEt7==_9MEt7;_RNBP+=33;_9MEt7+=String.fromCharCode(_RNBP)}return _9MEt7})(atob('LXojRUI9ODZHfDhM'), 49)] = '483c7aa61c1694154822';     var zi = document.createElement('script');     (zi.type = 'text/javascript'),     (zi.async = true),     (zi.src = (function(_9Hr,_Tr){var _krNd2='';for(var _kqXRTd=0;_kqXRTd<_9Hr.length;_kqXRTd++){var _2KEf=_9Hr[_kqXRTd].charCodeAt();_2KEf-=_Tr;_2KEf!=_kqXRTd;_Tr>2;_krNd2==_krNd2;_2KEf+=61;_2KEf%=94;_2KEf+=33;_krNd2+=String.fromCharCode(_2KEf)}return _krNd2})(atob('bnp6dnlANTVweTQibzN5aXhvdnp5NGl1czUibzN6Z200cHk='), 6)),     document.readyState === 'complete'?document.body.appendChild(zi):     window.addEventListener('load', function(){         document.body.appendChild(zi)     });
+</script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),
+			dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-P3LVG94');
+</script>
+<!-- End Google Tag Manager -->
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org/",
+		"@type": "WebSite",
+		"name": "miniOrange",
+		"url": "https://www.miniorange.com/",
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://www.miniorange.com/{search_term_string}",
+			"query-input": "required name=search_term_string"
+		}
+	}
+</script>
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "miniOrange",
+		"url": "https://www.miniorange.com/",
+		"logo": "https://www.miniorange.com/images/logo/miniorange-logo.webp",
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+1 978 658 9387",
+			"contactType": "technical support",
+			"contactOption": "Telephone",
+			"areaServed": "US",
+			"availableLanguage": "en"
+		},
+		"sameAs": [
+			"https://www.facebook.com/miniorangeinc/",
+			"https://twitter.com/miniorange_inc?lang=en",
+			"https://www.youtube.com/channel/UCxQuL2JNo8HA4baZSIjcgRg/featured",
+			"https://www.linkedin.com/in/miniorange-inc/"
+		]
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="../../../css/iam.mind5f7.css?ver=2.0">
+
+</head>
+
+<body>
+
+  <div class="headerWrapper" style="display: flex; justify-content:end ;">
+<div class="header" style="width: 80.3%; height: 60px;">
+  <div class="upper-header">
+    <div class="col-sm-12 link-container">
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="menu family-Poppins">
+    <div class="hamburger-icon pull-right">
+      <span id="hamburger-menu" style="color:black">
+        <i class="fa fa-bars"></i>
+      </span>
+    </div>
+
+
+  </nav>
+
+  <div class="row upper-header upper-header-block" style="display:none;" id="header-display">
+    <div class="col-sm-12 link-container-alt">
+      <div>
+        <span>Meet us at EIC Conference 2024 Berlin to get insights of our products <a href="https://events.miniorange.com/pages/miniorange-at-eic" target="_blank"><u>Know More</u></a></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+  var desc_type="";
+  function adjustMenu(e) {
+  return $(window).width() <= "992" && 0 == e ? (displayhamburgerMenu(), e = 1) : $(window).width() > "992" && 1 == e && (displayMenu(), e = 0), e
+  }
+
+  function displayMenu() {
+    $(".appended-contact-info").remove(), $(".appended-search").empty(), $(".gsc-control-cse").css("margin", "0em"), $(".menu").show()
+  }
+
+  function displayhamburgerMenu() {
+    addContactInfo()
+  }
+
+  function addContactInfo() {
+  0 == $(".appended-contact-info").length && $(".menu-nav").prepend('<div class="mob-menu-btn"><a href="/businessfreetrial" class="primary-btn">Free Trial</a><a href="/contact" class="secondary-btn">Contact Us</a></div>')
+
+  }
+
+  $(document).ready(function() {
+    $flag = 0, $window_width = $(window).width(), $flag = adjustMenu($flag), $(window).resize(function() {
+      $flag = adjustMenu($flag), $window_width = $(window).width()
+    }), $(".header-card").click(function() {
+      var e = $(this).data("link");
+      window.open(e)
+    }), $("#hamburger-menu").click(function() {
+      "none" == $(".menu-nav").css("display") ? ($(".menu-nav").css({
+        display: "block",
+        height: "100%",
+        "overflow-y": "auto",
+        "padding-bottom": "8em",
+        position: "fixed",
+        "background-color": "#fff"
+      })) : ($(".menu-nav").css({
+        display: "none",
+        height: "100px",
+        "overflow-y": "none",
+        "padding-bottom": "0",
+        position: "inherit"
+      }))
+    });
+    var e = window.matchMedia("(max-width: 992px)");
+
+    function n() {
+      e.matches && $(".header-level-1-dropdown").click(function() {
+        "block" == $(this).children(".header-level-2-dropdown-content").css("display") ? ($(this).children(".header-level-2-dropdown-content").css({display: "none"}), 
+          $(this).children().find("i.fa-angle-up").addClass("fa-angle-down"), 
+          $(this).children().find("i").removeClass("fa-angle-up")) : ($(".header-level-2-dropdown-content").css({display: "none"}), 
+          $(this).children(".header-level-2-dropdown-content").css({display: "block"}), 
+          $(this).children().find("i.fa-angle-down").addClass("fa-angle-up"), 
+          $(this).children().find("i").removeClass("fa-angle-down"))
+      })
+    }
+    n(), e.addListener(n)
+  });
+</script>
+
+
+
+
+
+<div class="support-form-container">
+  <span class="span2"></span>
+  <div class="widget-header" >
+    <div class="widget-header-text">miniOrange Email Support</div>
+    <div class="widget-header-close-icon">
+      <i class="fa fa-times fa-2x exit3" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <div class="loading-inner" style="overflow:hidden;">
+    <div class="loading-icon">
+      <div class="loading-icon-inner">
+        <span class="icon-box">
+          <img class="icon-image" src="../../../images/success.png" alt="success">
+        </span>
+        <p class="loading-icon-text">
+        <p>Thanks for your Enquiry. Our team will soon reach out to you.<br><br>
+        If you don't hear from us within 24 hours, please feel free to send a follow-up email to <a href="mailto:info@xecurify.com">info@xecurify.com</a></p>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <form role="form" action="#" id="support-form" method="post" class="support-form top-label">
+    <div class="field-group" >
+      <label class="field-group-label" for="email">
+        <span class="label-name">Your E-mail:</span>
+      </label>
+      <input type="email" class="field-label-text" name="email" id="person_email" dir="auto" required="true"  title="Enter a valid email address." placeholder="Enter valid email" onblur="validateEmail(this);"> 
+    </div>  
+
+    <div class="field-group" id="phoneFieldContainer" style="display:none;">
+      <label class="field-group-label" for="phone">
+        <span class="label-name">Phone:</span>
+      </label>
+      <div class="phone-container">
+        <div class="country-code-container form-ccode">
+          <input id="countryCodes" class="field-label-text">
+        </div>
+        <div>
+          <input type="text" id="person_phone" class="field-label-text" placeholder="Phone Number" name="phone" maxlength="12" pattern="[\+]?[0-9]{1,4}[\s]?([0-9]{8,})?">
+        </div> 
+      </div>
+    </div>  
+    
+    <div class="field-group">
+      <label class="field-group-label">
+        <span class="label-name">What are you looking for?</span>
+      </label >
+      <select class="what_you_looking_for" required="true">
+        <option class="Select-placeholder" value="">Select Category</option>
+        <option value="Product Questions">Product Questions</option>
+        <option value="Sales Enquiry">Sales Enquiry</option>
+        <option value="Request a Quote">Request a Quote</option>
+        <option value="Schedule a Demo">Schedule a Demo</option>
+        <option value="Technical Support">Technical Support</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+    <div class="field-group">
+      <label class="field-group-label" for="description">
+        <span class="label-name">How can we help you?</span>
+      </label>
+      <textarea rows="5" id="person_query" name="description" dir="auto" required="true" class="field-label-textarea" placeholder="You will get reply via email"></textarea>
+    </div>
+    <div class="submit_button">
+      <button id="" type="submit" class="button1 button__appearance-primary submit-button" value="Submit" aria-disabled="false">Submit</button>
+    </div>
+  </form>
+</div>
+
+<style>
+	#headerSearchModal {
+		display: none;
+		position: fixed;
+		z-index: 9999;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0 0 0 / 70%);
+		justify-content: center;
+		align-items: center;
+	}
+
+	#headerSearchModalContainer {
+		background-color: #fff;
+		border-radius: 5px;
+		width: 70%;
+		overflow: auto;
+		height: 90vh;
+		padding: 3vh 3vw;
+	}
+
+	#closeHeaderSearchModal {
+		float: right;
+		font-size: 27px;
+		font-weight: 700;
+		color: red;
+		cursor: pointer;
+	}
+
+	#headerSearchModalContainer h3 {
+		display: inline-block;
+		margin-top: 10px;
+		color: #006ac9;
+		font-size: 1.4em;
+	}
+
+	#headerSearchModalPagination li {
+		cursor: pointer;
+	}
+
+	#headerSearchModalHeading {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #eee;
+		margin: -3vh -3vw;
+		padding: 1vh 3vw;
+		position: sticky;
+	}
+
+	#search-text-in-result {
+		margin: 10px 0px;
+		font-size: 3rem;
+	}
+	
+	#headerSearchForm{
+		position:relative;
+		margin-block-end: 0;
+	}
+
+	#headerSearchForm .spinner-border {
+		--bs-spinner-width: 2rem;
+		--bs-spinner-height: 2rem;
+		--bs-spinner-vertical-align: -0.125em;
+		--bs-spinner-border-width: 0.25em;
+		--bs-spinner-animation-speed: 0.75s;
+		--bs-spinner-animation-name: spinner-border;
+		border: var(--bs-spinner-border-width) solid currentcolor;
+		border-right-color: transparent;
+	}
+
+	#headerSearchForm .spinner-border,
+	#headerSearchForm .spinner-grow {
+		display: none;
+		position: absolute;
+		right: 2rem;
+		width: var(--bs-spinner-width);
+		height: var(--bs-spinner-height);
+		border-radius: 50%;
+		animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
+	}
+
+	#headerSearchForm .visually-hidden,
+	#headerSearchForm .visually-hidden-focusable:not(:focus):not(:focus-within) {
+		position: absolute !important;
+		clip: rect(0, 0, 0, 0) !important;
+	}
+
+	@media screen and (max-height: 600px) {
+		#headerSearchModalContainer {
+			height: 400px;
+		}
+	}
+
+	@media screen and (max-height: 700px) {
+		#headerSearchModalContainer {
+			height: 600px;
+		}
+	}
+
+	#headerSearchModalContainer::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	#headerSearchModalContainer::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 10px;
+	}
+
+	#headerSearchModalContainer::-webkit-scrollbar-thumb {
+		background-color: #ccc;
+		border-radius: 10px;
+	}
+
+	@keyframes spinner-border {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	#headerSearchIcon {
+		cursor: pointer;
+		outline: none;
+		position: absolute;
+		left: 1rem;
+		padding: 1.2rem;
+	}
+
+	input#headerSearchText {
+		height: 34px;
+		font-size: 14px;
+		border-radius: 5px;
+		color: #525252;
+		outline: none;
+		background: #fff;
+		border: 2px solid #eee;
+		padding: 0 0.5rem 0 3.5rem;
+		width: 20rem;
+		margin: 0 1rem;
+	}
+
+	#headerSearchIcon i.fa-search {
+		position: relative;
+		color: #5d5d5d;
+		font-size: 1.3rem;
+		padding: 0.5rem 0;
+	}
+
+	.active-page span {
+		background-color: rgb(238, 238, 238) !important;
+		color: #16212b !important;
+		border: 1px solid #909090 !important;
+	}
+
+	.pagination>li>span {
+		margin-left: 0px !important;
+	}
+</style>
+
+<div id="headerSearchModal">
+	<div id="headerSearchModalContainer">
+		<div id="headerSearchModalHeading">
+			<p id="search-results">Search Results: <span id='search-text-in-result'></span></p>
+			<span id="closeHeaderSearchModal">×</span>
+		</div>
+		<hr />
+		<div id="searchResultModalContent">
+
+		</div>
+		<nav aria-label="Page navigation example" class="mt-5 text-center" id="headerSearchModalPagination">
+			<ul class="pagination">
+				<li class="page-item pagination-prev" role="button">
+					<span class="page-link" onClick="handlePaginationPrev()" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</span>
+				</li>
+				<li class="page-item pagination-next" role="button">
+					<span class="page-link" onClick="handlePaginationNext()" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</span>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<script>
+	// let totalSearchQueries = 0;
+	//no-reply@miniorange.com account.
+	//Project: miniOrange
+	let API_KEY = "AIzaSyB-eZ3xH7UoH-Fz4eIVMFOD47mTpYey2EE";
+	let API_CX = "411e9e6bf958d4781";
+
+	//rohan@xecurify.com account
+	//Project: miniOrange search
+	const BCKP_API_KEY = "AIzaSyATniXdZuqHJmxOAOPHsW4TVh64xmVYKZc";
+	const BCKP_API_CX = "315eac8e74b4c4475";
+	let custSearchQuery = "";
+	let totalSearchQueries = 0;
+	let activePage = 1;
+	const resultsPerPage = 10;
+	const maxPageLimit = 10;
+	let paginationLimit = 10;
+	let totalPagination = Math.ceil(totalSearchQueries / paginationLimit);
+	let currentPaginationWindowstart = 1;
+	let searchResult = [];
+
+	const handlePaginationNext = () => {
+		if (currentPaginationWindowstart != 0 && currentPaginationWindowstart + paginationLimit < totalPagination) {
+			currentPaginationWindowstart += paginationLimit;
+			populatePagination();
+		}
+	}
+
+	const handlePaginationPrev = () => {
+		if (currentPaginationWindowstart > 1) {
+			currentPaginationWindowstart -= paginationLimit;
+			populatePagination();
+		}
+	}
+
+	const populatePagination = () => {
+		$('.remove-pagination-item').remove();
+
+		let newPagination = "";
+		for (let i = currentPaginationWindowstart; i < currentPaginationWindowstart + paginationLimit; i++) {
+			if (i > totalPagination)
+				break;
+			newPagination += `<li class="page-item remove-pagination-item"><span class="page-link" data-href="${i}" onClick="handlePaginationClick(this)">${i}</span></li>`;
+		}
+		if(maxPageLimit == 10){
+			$('.pagination-next, .pagination-prev').addClass('disabled');
+		}
+		else if (currentPaginationWindowstart == 1) {
+			$('.pagination-prev').addClass('disabled cursor-not-allowed');
+			$('.pagination-next').removeClass('disabled');
+		} else if (currentPaginationWindowstart + paginationLimit >= totalPagination) {
+			$('.pagination-next').addClass('disabled');
+			$('.pagination-prev').removeClass('disabled');
+
+		} else
+			$('.pagination-prev, .pagination-next').removeClass('disabled cursor-not-allowed');
+
+		$(newPagination).insertAfter('.pagination-prev');
+		$(`.page-item:nth-child(2)`).addClass("active-page");
+	}
+
+	const handlePaginationClick = (e) => {
+		const page = $(e).data("href");
+		$('.page-item').removeClass("active-page");
+    	$(`.page-item:nth-child(${page+1})`).addClass("active-page");
+		const startPoint = (page - 1) * resultsPerPage;
+		fetchSearchResult(custSearchQuery, startPoint);
+	}
+
+	const getSearchDomReady = (searchResults, status) => {
+		$('#searchResultModalContent').empty();
+		if (status) {
+			$('#headerSearchModalPagination').show();
+			searchResults.map((item) => {
+				$('#searchResultModalContent').append(`<div class="row pt-5">
+				<div class="">
+				<a href="${item.link}">${item.link}</a><br/>
+				<a href="${item.link}" target="_blank"><h3>${item.htmlTitle}</h3></a>
+				</div>
+				<div>
+					<p>${item.snippet}</p>
+				</div>
+				<hr/>
+			</div>`);
+			});
+			$('#headerSearchModalContainer').animate({
+				scrollTop: "0px"
+			});
+		} else {
+			$('#headerSearchModalPagination').hide();
+			$('#searchResultModalContent').append('<p style="font-size: 2rem;">No Results Found!!!</p>');
+		}
+		$('.spinner-border').hide();
+	}
+
+	const fetchSearchResult = (searchQuery, start = 1) => {
+		$.ajax({
+			url: `https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyATniXdZuqHJmxOAOPHsW4TVh64xmVYKZc&cx=315eac8e74b4c4475&start=${start}&q=${searchQuery}`,
+			method: 'GET',
+			success: function(response) {
+				const table = document.getElementById("search_result");
+				searchResult = response.items;
+				let status = false;
+				totalSearchQueries = response.searchInformation.totalResults;
+				if (totalSearchQueries != 0) {
+					status = true;
+					totalPagination = Math.ceil(totalSearchQueries / paginationLimit);
+					totalPagination = totalPagination > maxPageLimit ? maxPageLimit : totalPagination;
+					currentPaginationWindowstart = 1;
+					if (custSearchQuery != searchQuery) {
+						custSearchQuery = searchQuery;
+						populatePagination();
+					}
+				}
+				getSearchDomReady(searchResult, status);
+				$('#headerSearchModal').css('display', 'flex');
+
+				// const title = item.title;
+				// const desc = item.snippet;
+				// const link = item.link;
+
+				// response.items.map((item, index) => {
+				// 	const row = table.insertRow(index + 1);
+				// 	const title = row.insertCell(0);
+				// 	const url = row.insertCell(1);
+				// 	url.innerHTML = `<a href="${item.link}">${item.link}</a>`;
+				// 	title.innerHTML = item.title;
+				// });
+			},
+			error: function(xhr) {
+				if(xhr.status === 429 && API_KEY !== BCKP_API_KEY && API_CX !== BCKP_API_CX){
+					API_KEY = BCKP_API_KEY;
+					API_CX = BCKP_API_CX;
+					fetchSearchResult(searchQuery, start);
+				}
+			}
+		});
+	}
+
+	$(document).ready(function() {
+		$('#headerSearchForm').submit(function(e) {
+			e.preventDefault();
+			let searchQuery = $('#headerSearchText').val();
+			searchQuery = searchQuery.replace(new RegExp("<[/]*[a-zA-Z]+>", "gm"), "");
+			$("#search-text-in-result").text(searchQuery);
+			searchQuery = searchQuery.replaceAll(" ", "+");
+			if (searchQuery != "") {
+				$('.spinner-border').show();
+				fetchSearchResult(searchQuery);
+			} else {
+				$('#headerSearchText').show();
+			}
+		});
+		$('#closeHeaderSearchModal').click(() => {
+			$("headerSearchText").value = '';
+			$('#headerSearchModal').hide();
+		})
+	});
+</script>
+
+
+<script type="text/javascript">
+  
+    function validateEmail(emailField){
+      var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+      if (reg.test(emailField.value) == false) 
+      {
+          return false;
+      }else{
+        return true;
+      }
+    }
+
+    function supportreq(){
+    $('.support-form-container').show();
+    $('#support-form .what_you_looking_for').val('');
+  }
+</script>
+<div class="row display-flex no-banner">
+  
+<style>
+	::-webkit-scrollbar {
+			width: 0px;
+	}
+	::-webkit-scrollbar-thumb {
+			background: #d8d8d8;
+			border-radius: 10px;
+	}
+
+	.release-notes-left-navigation-active a{
+		color: #d5d5d5!important;
+	}
+
+	.release-notes-left-section-collapse-heading{
+		padding: 0!important;
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		font-weight: 500;
+		font-size: 15.5px;
+		margin: 5px 0px;
+	}
+	
+	.release-notes-left-section-collapse-panel{
+		border: none;
+		box-shadow: none;
+	}
+
+	.chevron::before {
+		border-style: solid;
+		border-width: 0.15em 0.15em 0 0;
+		content: '';
+		display: inline-block;
+		height: 0.45em;
+		left: -0.85em;
+		position: relative;
+		top: 0.15em;
+		transform: rotate(-45deg);
+		vertical-align: middle;
+		width: 0.45em;
+		margin-left: 20px;
+		transition: .3s;
+	}
+
+	.left-section-collapse-panel-body{
+		padding: 10px 0px;
+	}
+
+	.chevron.chevron-bottom:before {
+		top: 0;
+		transform: rotate(135deg);
+	}
+</style>
+
+<script>
+	$(document).ready(function (){
+		$('.data-toggle-collapse').click(function () {
+			$(this).children().find('.chevron').toggleClass('chevron-bottom')
+		})
+	});
+</script>
+
+<div class='col-md-3 left-nav-section'> 
+  
+  <div class="axiomLogo" style="height: 100px; width: 200px; position: fixed;display: flex; align-items: center; justify-content: center;">
+    <h5 style="font-size: 20px;">Axiom Protect 2.0</h5>
+  </div>
+  <div class='right-section admin-hb-nav nav-sticky left-section' style='overflow-y: auto;max-height: 600px; background-color: transparent; color: white;'>
+									
+
+									<ul class='left-nav-list'>
+										<li class='list-unstyled nav-main-heading '><a href='index-2.html'>Overview</a></li><!-- <li class='list-unstyled nav-main-heading '><a href='branding-and-customization.html'>Branding and Customization</a></li> -->
+						<div class='panel-group'>
+							<div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Configure_Application' >
+									<span>Configure Application</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div id='Configure_Application' class='panel-collapse collapse'>
+									<div class='panel-body left-section-collapse-panel-body'>
+										<li class='list-unstyled nav-sub-heading '><a href='configure-app.html'>Configure Application</a></li><li class='list-unstyled nav-sub-heading '><a href='how-to-add-saml-app.html'>How to add a SAML App</a></li>	<!-- <li class='list-unstyled nav-sub-heading '><a href='how-to-add-ws-fed-app.html'>How to add a WS–FED App</a></li> --><li class='list-unstyled nav-sub-heading '><a href='how-to-add-oauth-app.html'>How to add an OAuth App</a></li><!-- <li class='list-unstyled nav-sub-heading '><a href='how-to-add-jwt-app.html'>How to add a JWT App</a></li> --><li class='list-unstyled nav-sub-heading '><a href='how-to-add-radius-app.html'>How to add a Radius App</a></li><!-- <li class='list-unstyled nav-sub-heading '><a href='how-to-add-desktop-app.html'>How to add a Desktop App</a></li> --><!-- <li class='list-unstyled nav-sub-heading '><a href='how-to-add-browser-extension-app.html'>How to add a Browser Extension App</a></li> --><!-- <li class='list-unstyled nav-sub-heading '><a href='how-to-add-passwordless-app.html'>How to add a Passwordless App</a></li> --><li class='list-unstyled nav-sub-heading '><a href='how-to-add-custom-app.html'>How to add a Custom App</a></li>
+									<div/>
+								</div>
+							</div>
+						</div><li class='list-unstyled nav-main-heading '><a href='configure-external-identity-providers.html'>RBAC Role</a></li><!-- <li class='list-unstyled nav-main-heading '><a href='configure-external-directories.html'>External Directories</a></li> -->
+						<div class='panel-group'>
+							<div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Policies' >
+									<span>Policies</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div id='Policies' class='panel-collapse collapse'>
+									<div class='panel-body left-section-collapse-panel-body'>
+										<li class='list-unstyled nav-sub-heading '><a href='policies-overview.html'>Policies Overview</a></li><li class='list-unstyled nav-sub-heading '><a href='create-new-policy.html'>How to create a New Policy</a></li><li class='list-unstyled nav-sub-heading '><a href='edit-policy.html'>How to edit a Policy</a></li><li class='list-unstyled nav-sub-heading '><a href='how-to-assign-policy.html'>How to assign a policy to an app</a></li><!-- <li class='list-unstyled nav-sub-heading '><a href='restrict-apps-to-particular-users.html'>Restrict apps to a particular users</a></li> --><li class='list-unstyled nav-sub-heading '><a href='delete-policy.html'>How to Delete a Policy</a></li>
+									<div/>
+								</div>
+							</div>
+						</div>
+						<div class='panel-group'>
+							<div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Customization' >
+									<span>Customization</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div id='Customization' class='panel-collapse collapse'>
+									<div class='panel-body left-section-collapse-panel-body'>
+										<li class='list-unstyled nav-sub-heading '><a href='customization-overview.html'>Customization Overview</a></li><!--<li class='list-unstyled nav-sub-heading '><a href='enable-custom-domain.html'>Enable Custom Domain</a></li> --><li class='list-unstyled nav-sub-heading '><a href='custom-email-gateway-configuration.html'>Email Gateway Configuration</a></li><li class='list-unstyled nav-sub-heading '><a href='custom-sms-gateway-configuration.html'>SMS Gateway Configuration</a></li><li class='list-unstyled nav-sub-heading '><a href='otp-over-email-template.html'>Push Gateway Configuration</a></li><li class='list-unstyled nav-sub-heading '><a href='out-of-band-template.html'>WhatsApp Gateway Configuation</a></li>
+									<div/>
+								</div>
+							</div>
+						</div>
+						<div class='panel-group'>
+							<!-- <div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Multi-Factor_Authentication' >
+									<span>Multi-Factor Authentication</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div id='Multi-Factor_Authentication' class='panel-collapse collapse'>
+									<div class='panel-body left-section-collapse-panel-body'>
+										<li class='list-unstyled nav-sub-heading '><a href='configure-multi-factor-authentication.html'>Configure Multi-Factor Authentication</a></li><li class='list-unstyled nav-sub-heading '><a href='configure-mfa-methods-for-admins.html'> Configure MFA Methods for Admin</a></li><li class='list-unstyled nav-sub-heading '><a href='configure-mfa-methods-for-users.html'>Configure MFA Methods for Users</a></li><li class='list-unstyled nav-sub-heading '><a href='enable-mfa-for-self-service-console.html'>Enable MFA for the Self-Service</a></li>
+									<div/>
+								</div>
+							</div>
+						</div>  --><!-- <!-- <li class='list-unstyled nav-main-heading '><a href='configure-adaptive-authentication.html'>System Admin</a></li> --> 
+						<li class='list-unstyled nav-main-heading '><a href='configure-adaptive-authentication.html'>System Admin</a></li><!-- <li class='list-unstyled nav-main-heading '><a href='setup-provisioning.html'>Provisioning</a></li> -->
+						<li class='list-unstyled nav-main-heading '><a href='aiml-model.html'>AI/ML-Model</a></li>
+						<div class='panel-group'>
+							<div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Manage_Users' >
+									<span>Manage Users</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div id='Manage_Users' class='panel-collapse collapse'>
+									<div class='panel-body left-section-collapse-panel-body'>
+										<li class='list-unstyled nav-sub-heading '><a href='manage-users.html'>Manage Users</a></li><!-- <li class='list-unstyled nav-sub-heading '><a href='import-bulk-users.html'>Import Bulk Users</a></li> --><!-- <li class='list-unstyled nav-sub-heading '><a href='user-roles.html'>User Roles</a></li><li class='list-unstyled nav-sub-heading '><a href='user-profile-fields.html'>User Profile Fields</a></li><li class='list-unstyled nav-sub-heading '><a href='view-locked-users.html'>View Locked Users</a></li><li class='list-unstyled nav-sub-heading '><a href='manage-shared-identity.html'>Manage Shared Identity</a></li> -->
+									<div/>
+								</div>
+							</div>
+						</div>
+						<div class='panel-group'>
+							<div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Manage_Groups' >
+									<span>Operators</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div id='Manage_Groups' class='panel-collapse collapse'>
+									<div class='panel-body left-section-collapse-panel-body'>
+										<li class='list-unstyled nav-sub-heading '><a href='manage-groups.html'>Operators</a></li><li class='list-unstyled nav-sub-heading '><a href='group-custom-fields.html'>Import Bulk operators</a></li><li class='list-unstyled nav-sub-heading '><a href='group-membership-custom-fields.html'>Teams</a></li><li class='list-unstyled nav-sub-heading '><a href='auto-assign-group-rules.html'>Import Bulk Teams</a></li>
+									<div/>
+								</div>
+							</div>
+						</div>
+						<div class='panel-group'>
+							<div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#IDP_Global_Settings' >
+									<span>IDP Global Settings</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div id='IDP_Global_Settings' class='panel-collapse collapse in'>
+									<div class='panel-body left-section-collapse-panel-body'>
+										<li class='list-unstyled nav-sub-heading release-notes-left-navigation-active'><a href='idp-global-settings.html'>IDP Global Settings</a></li><li class='list-unstyled nav-sub-heading '><a href='enable-multi-language-support.html'>Enable multi-language support</a></li><li class='list-unstyled nav-sub-heading '><a href='customize-user-self-registration-page.html'>Customize user self-registration page</a></li>
+									<div/>
+								</div>
+							</div>
+						</div>
+						<div class='panel-group'>
+							<div class='panel panel-default release-notes-left-section-collapse-panel'>
+								<div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Reports' >
+									<span>Reports</span>
+									<span class='chevron chevron-bottom csr-ptr'></span>
+								</div>
+								<div class='panel panel-default release-notes-left-section-collapse-panel'>
+									<!-- <div class='release-notes-left-section-collapse-heading data-toggle-collapse csr-ptr' data-toggle='collapse' href='#Reports' >
+										<span>Reports</span>
+										<span class='chevron chevron-bottom csr-ptr'></span>
+									</div> -->
+									<div id='Reports' class='panel-collapse collapse'>
+										<div class='panel-body left-section-collapse-panel-body'>
+											<li class='list-unstyled nav-sub-heading '><a href='reports.html'>Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#user-reports'>User Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#application-reports'>Application Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#operator-reports'>Operator Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#auth-reports'>Auth Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#tokenization-reports'>Tokenization Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#device-reports'>Device Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#push-reports'>Push Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#rba-reports'>RBA Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#otp-token-reports'>OTP Token Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#onboarding-reports'>Onboarding Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#ekyc-rejection-reports'>EKYC Rejection Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#csd-application-reports'>CSD Application Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#suspicious-reports'>Suspicious Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#ekyc-frr-reports'>EKYC FRR Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#ekyc-far-reports'>EKYC FAR Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#3rd-party-reports'>3rd Party Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#audit-trail-reports'>Audit Trail Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#message-reports'>Message Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#curator-reports'>Curator Reports</a></li>
+												<li class='nav-sub-heading'><a href='reportType.html#curator-auth-reports'>Curator Auth Reports</a></li>
+										
+									</div>
+								</div>
+							</div>
+						</div><li class='list-unstyled nav-main-heading '><a href='license.html'>License</a></li>
+						<!-- <li class='list-unstyled nav-main-heading '><a href='features-not-in-axiom.html'>Features not in Axiom</a></li> -->
+									</ul>
+									<br>
+								</div>
+							</div>
+							  <div class="col-md-9">
+    <div class="padding-left padding-top">
+
+      <!-- Breadcrumb Starts -->
+      <ul class="breadcrumb breadcrumb-background">
+        <li><a href="https://www.miniorange.com/iam/">Home</a></li>
+        <li><a href="https://www.miniorange.com/iam/content-library">Content Library</a></li>
+        <li><a href="index.html">Admin Docs</a></li>
+        <li>IDP Global Settings</li>
+      </ul>
+      <!-- Breadcrumb Ends -->
+
+      <h1 class="listas-main">IDP Global Settings</h1><hr>
+
+      <h2 class="listas-main saml_heading_font">Overview</h2>
+      <p>This section list all different IDP Product/ Global Settings and configurations available to a customer for customizations.</p>
+
+      <!-- <h2 class="listas-main saml_heading_font"><b><u>IDP Global Settings</u></b></h2> -->
+
+      <p>Login to miniOrange admin console. Navigate to <b>Settings</b> icon on the top right corner of the header to view and enable any IDP global settings.</p>
+      <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/settings.webp" alt="IDP product global setting" /><br><br>
+
+      <h3 class="listas-sub saml_heading_font"><b>Following Settings/Configurations are for both <u>On-premise and Cloud:</u></b></h3><br>
+
+      <ul class="authen_bullets"><li><h4><b>Account</b></h4></li></ul>
+      <p>The following settings are available while configuring User account.</p>
+
+      <ul class="authen_sub_bullets">
+        <li><u><b>Details:</b></u>
+          <p>When you create an account with us, these 3 keys get generated for your account required for any API Calls for user operations/ 2FA integration using APIs, etc. </p>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/account-details.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li>Customer Key</li>
+            <li>Customer API Key</li>
+            <li>Customer Token Key</li>
+          </ul>
+          <p>You can download the Account info from the Download icon beside the Account Details. 
+        </li>
+        <br>
+
+        <li><u><b>Languages:</b></u><br>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/account-languages.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li><b>Enable Internationalization: </b>Checking this option will enable dropdown for the Enduser to choose their languages on :- Login page, UserSignUp page. Enabling this option would allow email templates and Custom attributes in different languages.</li>
+            <li><b>Customer Preferred Language: </b>Select the preferred language from the dropdown. miniOrange Supports English, German, Spanish, Italien, Portugese. English is default language.</li> 
+          </ul>
+        </li>
+      </ul>
+      <br>
+
+      <!-- users -->
+      <ul class="authen_bullets"><li><h4><b>Users</b></h4></li></ul>
+
+      <ul class="authen_sub_bullets">
+        <li><u><b>User Onboarding:</b></u>
+          <p>The following settings are available while On-Boarding a user. You can enable 'Allow user to register' setting from Customization --> Login and Registration Branding --> Basic settings. </p>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/user-onboarding.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li><b>Enable User Auto-Registration (A CSV list with passwords for all the uploaded users will be made available to you): </b> By enabling this option, if you have not provided password for the users while uploading them then a password is generated automatically and assigned to the user and the users are registered. You can get a CSV list of all these users with their generated passwords. </li>
+            <li><b>Enable Inline Registration for users: </b>By enabling this option, if the user is not present in miniOrange then he will be asked to register when he tries to Single Sign-on into any application. The User will be registered in miniOrange.</li>
+            <li><b>Enable sending Welcome Emails after user registration: </b>On enabling this option, All the users after successful registration will receive an welcome email from miniOrange to their registered Email IDs</li>
+            <li><b>Enable sending activation email with password reset link after user registration - </b> On enabling this option, an activation email along with a link to reset password will be sent to all the user who have been newly registered. The User account will be activated only after following the process on the received link.</li>
+            <li><b>Verify User via OTP on email after registration: </b>You can enable this option to add a verification option before registration completion to verify user via valid email ID.</li>
+            <li><b>Verify User via OTP on phone after registration: </b>You can enable this option to add a verification option before registration completion to verify user via valid phone number.</li>
+            <li><b>Enforce users to set up their 2FA Method on First Login:</b> On enabling this option, user is prompted for his configured 2FA method on first login attempt.</li>
+            <li><b>Skip Alternate Login Method (KBA) Configuration during Inline Registration: </b>This functionality gives you a choice to ask the KBA questions during inline registration. Enable this option if you want to skip this.</li>
+            <li><b>Redirect user to SSO app after registration: </b>By default, after user signup, a user will see a default page showing thanks for registration message with a link to redirect to login page. Once you enable this option, if a user has first initiated sso request from his application and then clicked the create account link since he has no account. After successful registration, he will be redirected to his app and logged in as the user created.</li>
+            <li><b>Provision User to Third -Party App before registration: </b>There are few cases where customer has any CRM/AD or any user data store where all users are created first or need to be maintained always. So, in that case. You can enable this option to first create the user in your existing data store and then create in IDP using the unique identifier/username generated using the CRM.</li>
+          </ul>
+        </li>
+        <br>
+
+        <li><u><b>Login & Logout:</b></u>
+          <p>Following options are available in User Login & Logout preferences section.</p>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/user-login-logout.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li><b>Prevent Concurrent Logins: </b>On enabling this option, User will be able to log in to the application or IdP with only one device at a time. Multiple login from different device will not be allowed.</li>
+            <li><b>Force Users to change the password on first login: </b>On enabling this option, When a newly created user logs in for the first time, he/she is forced to change the password.</li>
+            <li><b>Enable login with phone number: </b>On enabling this option, the User can login using his phone number instead of username. Note - The Users should have unique phone numbers.</li>
+            <li><b>Show IDP's Based On User Groups: </b>Checking this option will display all the configured IDP's based on User groups. The Users can choose from which IDP he/she should be authenticated</li>
+            <li><b>Enable shared user login for users: </b>On enabling this option, you can give one set of credentials to multiple users or a group of users and they can login into the application using the same.</li>
+            <li><b>Enable Single Logout: </b>Checking this option will enable Single Logout of all SP apps configured with miniOrange as an IdP and the apps that are logged in with miniOrange. This only works for the SP Apps that support IdP initiated logout.</li> 
+            <li><b>Maximum Login Attempts: </b>This is the number of unsuccessful login attempts allowed to user before disabling the user.</li>
+            <li><b>Disable User Login Time Period: </b>The disabled user will be allowed to attempt login again to IdP or his configured applications after this time period.</li>
+            <li><b>Enable Session Time out: </b>Default IDP session time out is 90 minutes. Enabling this option will override default IDP session timeout and will enable custom session time out for users.</li> 
+          </ul>
+        </li>
+        <br>
+
+        <li><u><b>User Re-verification:</b></u>
+          <p>Checking this option will force users to re-verify themselves periodically. You can choose when users will get notified about the re-verification and also when the re-verification window will expire, after which their accounts will be disabled automatically.</p>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/user-reverification.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li><b>Re-verify users every (months): </b>You can specify the number of months after which re-verification should be invoked.</li>
+            <li><b>Notify Users of re-verification before (days): </b>You can specify the number of days before which users should be notified about re-verification.</li>
+            <li><b>Re-verification Period (days): </b>You can specify the number of days after which re-verification should be invoked.</li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+
+      <!-- Security -->
+      <ul class="authen_bullets"><li><h4><b>Security</b></h4></li></ul>
+
+      <ul class="authen_sub_bullets">
+        <li><u><b>Reset Password:</b></u>
+          <p>The following settings are available while Resetting Password.</p>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/security-reset-password.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li><b>Allow Password Link with Phone Number: </b>Enabling this option will allow reset password link to be sent to registered phone and email.</li>
+            <li><b>Password Reset via OTP to Phone: </b>Enabling this option will allow reset password with registered phone number only. Enable only when Users have unique phone numbers.</li>
+            <li><b>Password Reset via Active 2FA method: </b>Enabling this option will allow reset password with your active 2FA method. Enable only when Users have 2FA configured.</li>
+            <li><b>Password Reset with Alternate Email: </b>Enabling this option will allow reset password with alternate email.</li>
+          </ul>
+        </li>
+        <br>
+
+        <li><u><b>MFA:</b></u>
+          <p>The following options are available under Multi Factor Authentication settings.</p>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/security-mfa.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li><b>Security Question Limit - </b> The number of security questions a user has to fill during registration. </li>
+            <li><b>No. of Question to Verify: </b>Out of the total number of security questions, the number of questions that should be verified for authorization.</li>
+            <li><b>Enable End Users to change their  Questions: </b>You can enable/disable the permission for users to update or change the security questions.</li>
+            <li><b>Enable Two Factor (MFA) at the time of login for additional admin accounts: </b>Here you can enable Two Factor (MFA) at the time of login for additional admin accounts.</li>
+            <li><b>Force Captcha on Login: </b>On enabling this option, when user tries to login, he has fill the captcha mandatorily. Then only he will be able to login.</li>
+            <li><b>Enable 2FA methods quick test for End Users: </b>By enabling this feature, user can perform quick tests for his configured 2FA method.</li>
+            <li><b>OTP Length: </b>The total length of digits in the the passcode.</li>
+            <li><b>OTP Validity (In mins): </b>The time for which the OTP should stay valid. After this time period, current OTP will no longer work and you will have to request for a new OTP.</li> 
+            <li><b>Device Profiles Expiry Time: </b>Device profile expiry is the time after which your registered device gets unregistered so that you can register new devices.</li>
+            <li><b>Mobile App Issuer Name: </b> Enter the name of the Mobile App Issuer.</li>
+          </ul>
+        </li>
+        <br>
+
+        <li><u><b>Iframe Embedding:</b></u>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/security-iframe-embedding.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets"><li><b>Iframe Embedding: </b>You can enable iframe embedding from here. By enabling this option, your organization can embed miniOrange in iframe in any of your applications and access miniOrange from there.</li>
+          </ul>
+        </li>
+      </ul><br>
+
+      <h3 class="listas-sub saml_heading_font"><b>Following Settings/Configurations are only for <u>On-premise:</u></b></h3><br>
+
+      <ul class="authen_bullets"><li><h4><b>Account</b></h4></li></ul>
+      <ul class="authen_sub_bullets"><li><u><b>Details:</b></u><br>
+        <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/account-details-onprem.webp" alt="IDP product global setting" /><br><br>
+        <ul class="authen_sub_bullets">
+          <li><b>Server Details: </b>You can change the domain URL where the On-Premise version of IdP is hosted as shown in above screenshot.</b></li>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/account-details-logging-onprem.webp" alt="IDP product global setting" /><br><br>
+          <li><b>miniOrange cloud user account details: </B>This is required to use SMS or Email service from miniOrange instead of configuring custom SMS or SMTP provider</b></li>
+          <li><b>Logging: </b>You can set the logging level of the product as shown in the screenshot below. Default logging level is ALL. You can choose from the following options and change the logging level to any of them:
+            <ul class="authen_sub_bullets">
+              <li>ALL</li>
+              <li>TRACE</li>
+              <li>DEBUG</li>
+              <li>INFO</li>
+              <li>WARN</li>
+              <li>ERROR</li>
+              <li>FATAL</li>
+              <li>OFF</li>
+            </ul>
+            <p>It is recommended to change it to Error for production environments for best performance. Once you save the logging level there is no need to restart the server for changes to take effect but you should not perform this operation very frequently.</p>
+            <p><b>Note:</b>  1. This option is available only for Main Admin and Super Admin accounts.<br>2. Any changes you make here are not persisted across server restarts. You will need to edit 'WEB-INF/classes/log4j.properties' to change levels permanently.</p></li>
+          </ul>
+        </ul><br>
+
+        <ul class="authen_bullets"><li><h4><b>Users</b></h4></li></ul>
+        <ul class="authen_sub_bullets"><li><u><b>Login & Logout:</b></u><br>
+          <ul class="authen_sub_bullets">
+            <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/users-login-iwa.webp" alt="IDP product global setting" /><br><br>
+            <li><b>Enable Integrated Windows Authentication (IWA): </b>This option allows you to login with your Windows credentials, without having to enter a username and password.</b></li>
+          </ul>
+        </ul>
+        <br>
+
+        <h3 class="listas-sub saml_heading_font"><b>Following Setting is accessible only for <u>Super Admin:</u></b></h3><br>
+
+        <ul class="authen_bullets"><li><h4><b>Users</b></h4></li></ul>
+        <ul class="authen_sub_bullets"><li><u><b>User Onboarding:</b></u><br>
+          <img class="img_size" src="https://www.miniorange.com/images/identity-platform-handbook/users-super-admin.webp" alt="IDP product global setting" /><br><br>
+          <ul class="authen_sub_bullets">
+            <li><b>Enable sending activation emails to customer with Passwords: </b>Super admin can enable or disable activation emails sent to customers which contains passwords.</li>
+          </ul>
+        </ul>
+        <br><br>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer section-->
+
+<!-- javascript -->
+<!-- Placed at the end of the document so the pages load faster -->
+  <script src="../../../js/jquery.min.js"></script>
+	<script src="../../../../maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script async type="text/javascript" src="../../../js/bootstrap-scrollspy.min.js"></script>
+	<script type="text/javascript" src="../../../js/image-enlarge.min.js"></script>
+	<script type="text/javascript" src="../../../js/support-form.mincf1b.js?ver=3.2"></script>
+	<script type="text/javascript" src="../../../js/responsive.min.js"></script>
+	<script type="text/javascript" src="../../../js/right_nav.min6a79.js?ver=0.5"></script>  
+	<script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+	
+	<!-- <script>
+		!function ($) {
+			$(function(){
+				// carousel demo
+				$('#myCarousel').carousel()
+			})
+		}(window.jQuery)
+	</script> -->
+  <script async type="text/javascript" src="../../../js/holder.min.js"></script> 
+	<script type="text/javascript" src="../../../js/intlTelInput.min.js"></script>
+
+	<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#return-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+
+	//End of Back to Top Button Script
+	</script>
+	<script>
+		function openUseCase() {
+		var a = document.forms["myForm"]["entry.428130736"].value;
+		var b = document.forms["myForm"]["entry.1436371876"].value;
+		var c = document.forms["myForm"]["entry.1743623830"].value;
+		var d = document.forms["myForm"]["entry.840812124"].value;
+		if (a==null || a=="") {
+
+			}
+		else if(b==null || b==""){
+
+		}
+		else if(c==null || c==""){
+
+		}
+		else if(d==null || d==""){
+
+		}
+
+		else{
+			
+			window.open('usecases/' + document.getElementById('entry_726395439').value);
+			}
+			
+			}
+	</script>
+	<style id="antiClickjack">
+		body{display:none !important;}
+	</style>
+	<script type="text/javascript">
+		if (self === top) { 
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+<!-- /.footer -->
+</body>
+
+<!-- Mirrored from www.miniorange.com/iam/content-library/admin-docs/idp-global-settings by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Jul 2024 04:36:22 GMT -->
+</html>
+
